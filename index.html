@@ -59,9 +59,14 @@ title: News
 author: all
 ---
 
-{% for post in site.posts %}
-  {% include *.md %}
-{% endfor %}
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 <p><img alt="" src="https://lh3.googleusercontent.com/_NfTNfkovCuY/TXPcX9YQAtI/AAAAAAAAEQI/46wXQ-sZ8g4/s576/Basic%20Android%20by%20eyebeam.png" style="height:200px; width:150px" /></p>
       </section>
     </div>
