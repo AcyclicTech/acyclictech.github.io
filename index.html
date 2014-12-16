@@ -9,10 +9,10 @@ overview: true
 
 <ul>
   {% for post in site.posts %}
-    <p>
+    <li>
       <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ page.excerpt }}
-    </p>
+      {{ post.excerpt }}
+    </li>
   {% endfor %}
 </ul>
 
